@@ -22,7 +22,7 @@ FROM eclipse-temurin:17-jre-alpine AS runtime
 WORKDIR /app
 
 # Копировать скомпилированный JAR-файл из стадии сборки
-COPY --from=build /app/target/demo-historical-psql-app-1.0.0.jar app.jar
+COPY --from=build /app/target/FrontendTest1-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
