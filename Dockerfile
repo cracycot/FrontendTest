@@ -16,7 +16,8 @@ RUN mvn clean package -DskipTests
 # Проверка содержимого директории target для отладки
 RUN ls -l /app/target
 
-FROM maven:3.9.2-openjdk-17 AS build
+# ---- STAGE 2: RUNTIME ----
+FROM eclipse-temurin:17-jre-alpine AS runtime
 
 WORKDIR /app
 
