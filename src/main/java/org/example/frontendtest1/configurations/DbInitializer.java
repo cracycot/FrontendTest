@@ -28,8 +28,10 @@ public class DbInitializer {
                             "расположившийся в специально для этого построенном здании Нового Эрмитажа. Сегодня Эрмитаж является " +
                             "одним из крупнейших и значимых художественных музеев мира, в его экспозициях представлены произведения " +
                             "живописи, скульптуры и декоративно-прикладного искусства от античности до современности.",
-                    new ArrayList<>(Arrays.asList(new String[]{"https://storage.yandexcloud.net/social-network-media/images-6.jpeg", "https://storage.yandexcloud.net/social-network-media/images-7.jpeg"}))
-
+                    Arrays.asList(
+                            "https://storage.yandexcloud.net/social-network-media/images-6.jpeg",
+                            "https://storage.yandexcloud.net/social-network-media/images-7.jpeg"
+                    )
             ));
 
             repository.save(new HistoricalBuilding(
