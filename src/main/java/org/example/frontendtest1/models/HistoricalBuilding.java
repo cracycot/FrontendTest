@@ -12,7 +12,7 @@ public class HistoricalBuilding {
     private String name;
     private String city;
     private int yearOfConstruction;
-    @Column(columnDefinition = "TEXT")
+    @Column(name = "description", columnDefinition = "TEXT")
     private String description;
 
     // Конструкторы
