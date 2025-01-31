@@ -7,6 +7,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 @Configuration
 public class DbInitializer {
 
@@ -24,7 +27,9 @@ public class DbInitializer {
                             "В 1852 году из сильно разросшейся коллекции был сформирован и открыт для посещения публичный музей, " +
                             "расположившийся в специально для этого построенном здании Нового Эрмитажа. Сегодня Эрмитаж является " +
                             "одним из крупнейших и значимых художественных музеев мира, в его экспозициях представлены произведения " +
-                            "живописи, скульптуры и декоративно-прикладного искусства от античности до современности."
+                            "живописи, скульптуры и декоративно-прикладного искусства от античности до современности.",
+                    new ArrayList<>(Arrays.asList(new String[]{"https://storage.yandexcloud.net/social-network-media/images-6.jpeg", "https://storage.yandexcloud.net/social-network-media/images-7.jpeg"}))
+
             ));
 
             repository.save(new HistoricalBuilding(
