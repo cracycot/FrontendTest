@@ -1,9 +1,6 @@
 package org.example.frontendtest1.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class HistoricalBuilding {
@@ -15,6 +12,7 @@ public class HistoricalBuilding {
     private String name;
     private String city;
     private int yearOfConstruction;
+    @Column(length = 2000)
     private String description;
 
     // Конструкторы
